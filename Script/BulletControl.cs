@@ -8,6 +8,7 @@ public class BulletControl : MonoBehaviour
     
     private string ON_IMPACT = "Impact";
     private string METEOR_TAG = "Meteor";
+    private string WALL_TAG = "Wall";
 
     void Update(){
 
@@ -17,6 +18,9 @@ public class BulletControl : MonoBehaviour
         if(collision.gameObject.CompareTag(METEOR_TAG)){
             bulletAnimator.SetTrigger(ON_IMPACT);
             Invoke("Disapear", 0.42f); 
+        }
+        if(collision.gameObject.CompareTag(WALL_TAG)){
+            Disapear(); 
         }
     }
  

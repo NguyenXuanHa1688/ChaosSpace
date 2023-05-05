@@ -19,12 +19,12 @@ public class AlienBullet : MonoBehaviour
     }
     
     private void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.CompareTag(EARTH_TAG)){
-            Invoke("DestroyHealth",1f);         
+        if(collision.gameObject.CompareTag(EARTH_TAG)){   
+            DestroyObject();     
         } 
     }
 
-    void DestroyHealth(){
+    void DestroyObject(){
         Destroy(gameObject); 
     }
 }

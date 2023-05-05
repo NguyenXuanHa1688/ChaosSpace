@@ -13,6 +13,8 @@ public class Earth : MonoBehaviour
 
     private string METEOR_TAG = "Meteor";
     private string HEALTH_TAG = "Hp";
+    private string ALIEN_BULLET = "AlienBullet";
+    private string ALIEN_TAG = "Alien";
 
     void Start(){
         currentHealth = maxHealth;
@@ -36,10 +38,16 @@ public class Earth : MonoBehaviour
             healthEffect.SetTrigger("NoHealth");
         }
         healthEffect.SetTrigger("HealthDone");
+        if(Input.GetKey(KeyCode.DownArrow)){
+            TakeDamage(30f);
+        }
+        if(Input.GetKey(KeyCode.UpArrow)){
+            EatHealth();
+        }
     }
 
     void TakeDamage(float damage){
-        currentHealth -= damage;
+        currentHealth -= damage * Time.deltaTime;
         healhBar.SetHealth(currentHealth);
         Debug.Log(currentHealth);
     }
@@ -51,11 +59,17 @@ public class Earth : MonoBehaviour
         if(collision.gameObject.CompareTag(HEALTH_TAG) && currentHealth < 100f){
             EatHealth();
             healthEffect.SetTrigger("Heal");
+        }
+        if(collision.gameObject.CompareTag(ALIEN_BULLET)){
+            TakeDamage(5f);
+        }  
+        if(collision.gameObject.CompareTag(ALIEN_TAG)){
+            TakeDamage(40f);
         } 
     }
 
     void EatHealth(){
-        currentHealth += 10f;
+        currentHealth += 10f * Time.deltaTime;
         healhBar.SetHealth(currentHealth);
         Debug.Log(currentHealth);
     }
