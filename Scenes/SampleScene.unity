@@ -522,6 +522,7 @@ MonoBehaviour:
   pos: {fileID: 446775066}
   minRan: 15
   maxRan: 50
+  maxNumberObject: 100
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,9 +668,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -864,6 +877,7 @@ MonoBehaviour:
   pos: {fileID: 621598461}
   minRan: 30
   maxRan: 40
+  maxNumberObject: 100
 --- !u!1001 &636959292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -873,9 +887,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1139,9 +1165,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1230,6 +1268,7 @@ MonoBehaviour:
   pos: {fileID: 980943967}
   minRan: 40
   maxRan: 50
+  maxNumberObject: 100
 --- !u!1001 &1059043314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1239,9 +1278,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1680,9 +1731,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1906,9 +1969,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2110,9 +2185,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2253,8 +2340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6989b1f24b2f774e9f3283438702096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteorRef: {fileID: 4412462632507095620, guid: bd997766388f7034c95f6eec61ca223c, type: 3}
+  alienRef: {fileID: 4412462632507095620, guid: bd997766388f7034c95f6eec61ca223c, type: 3}
   pos: {fileID: 1666361518}
+  min: 30
+  max: 40
+  maxNumberObject: 0
 --- !u!1 &1869799765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,8 +2393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6989b1f24b2f774e9f3283438702096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meteorRef: {fileID: 2095794099056801310, guid: 0412ad335301c5b449ecb124ad5b6d82, type: 3}
+  alienRef: {fileID: 2095794099056801310, guid: 0412ad335301c5b449ecb124ad5b6d82, type: 3}
   pos: {fileID: 1869799766}
+  min: 20
+  max: 40
+  maxNumberObject: 10
 --- !u!1001 &1905318816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2314,9 +2407,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2386,9 +2491,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2455,9 +2572,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2534,9 +2663,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2603,9 +2744,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2692,6 +2845,7 @@ MonoBehaviour:
   pos: {fileID: 2103522949}
   minRan: 15
   maxRan: 30
+  maxNumberObject: 100
 --- !u!1 &2130548114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,9 +3524,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 198356226}
     m_Modifications:
     - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: max
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: min
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: meteorRef
       value: 
       objectReference: {fileID: 9046763933534576144, guid: ba86496e88f6ae94888eae66bf74ec2f, type: 3}
+    - target: {fileID: 919927385379985529, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
+      propertyPath: maxNumberObject
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1930039709321009266, guid: a1ed4bfec86b5ab43aed020c40e8406b, type: 3}
       propertyPath: m_RootOrder
       value: -1

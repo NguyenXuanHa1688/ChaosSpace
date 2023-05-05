@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletRef: {fileID: 7480836322483822744, guid: e6151c55b0a1eb0459e92e8778d3fff3, type: 3}
   pos: {fileID: 6923071732601439262}
+  maxNumberObject: 100
 --- !u!1 &7833892025508904749
 GameObject:
   m_ObjectHideFlags: 0

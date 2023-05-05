@@ -47,7 +47,7 @@ public class Earth : MonoBehaviour
     }
 
     void TakeDamage(float damage){
-        currentHealth -= damage * Time.deltaTime;
+        currentHealth -= damage;
         healhBar.SetHealth(currentHealth);
         Debug.Log(currentHealth);
     }
@@ -69,7 +69,7 @@ public class Earth : MonoBehaviour
     }
 
     void EatHealth(){
-        currentHealth += 10f * Time.deltaTime;
+        currentHealth += 10f;
         healhBar.SetHealth(currentHealth);
         Debug.Log(currentHealth);
     }

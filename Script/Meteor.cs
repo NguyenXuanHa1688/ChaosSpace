@@ -12,6 +12,7 @@ public class Meteor : MonoBehaviour
     private string EARTH_TAG = "Earth";
     private string BULLET_TAG = "Bullet";
     private string EXPLOSION_TAG = "Boom";
+    private string ALIEN_TAG = "Alien";
     private Animator animator;
 
     private void Start(){
@@ -30,19 +31,23 @@ public class Meteor : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag(PLAYER_TAG)){
             animator.SetTrigger(EXPLOSION_TAG);
-            Invoke("Disapear", 0.42f);
+            Invoke("DestroyObject", 0.42f);
         } 
         if(collision.gameObject.CompareTag(EARTH_TAG)){
             animator.SetTrigger(EXPLOSION_TAG);
-            Invoke("Disapear", 0.42f);
+            Invoke("DestroyObject", 0.42f);
         } 
         if(collision.gameObject.CompareTag(BULLET_TAG)){
             animator.SetTrigger(EXPLOSION_TAG);
-            Invoke("Disapear", 0.42f);
+            Invoke("DestroyObject", 0.42f);
+        } 
+        if(collision.gameObject.CompareTag(ALIEN_TAG)){
+            animator.SetTrigger(EXPLOSION_TAG);
+            Invoke("DestroyObject", 0.42f);
         } 
     }
 
-    void Disapear(){
+    void DestroyObject(){
         Destroy(gameObject);
     }
 }

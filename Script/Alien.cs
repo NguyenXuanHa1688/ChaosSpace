@@ -14,6 +14,7 @@ public class Alien : MonoBehaviour
     private string BULLET_TAG = "Bullet";
     private string PLAYER_TAG = "Player";
     private string EARTH_TAG = "Earth";
+    private string ALIEN_TAG = "Alien";
 
     void Start(){
         randomSpot = Random.Range(0, moveSpots.Length);
@@ -21,7 +22,6 @@ public class Alien : MonoBehaviour
 
     void Update(){
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
-
         if(Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f){
             if(waitTime <= 0){
                 randomSpot = Random.Range(0, moveSpots.Length);
@@ -45,6 +45,10 @@ public class Alien : MonoBehaviour
             alienAnimator.SetTrigger("Explode");
             Invoke("Disapear", 1f);
         } 
+        if(collision.gameObject.CompareTag(ALIEN_TAG)){
+            alienAnimator.SetTrigger("Explode");
+            Invoke("Disapear", 1f);
+        }
     }
 
     void Disapear(){

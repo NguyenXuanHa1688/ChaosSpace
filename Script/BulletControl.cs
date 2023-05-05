@@ -10,21 +10,17 @@ public class BulletControl : MonoBehaviour
     private string METEOR_TAG = "Meteor";
     private string WALL_TAG = "Wall";
 
-    void Update(){
-
-    }
-
     void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.CompareTag(METEOR_TAG)){
             bulletAnimator.SetTrigger(ON_IMPACT);
-            Invoke("Disapear", 0.42f); 
+            Invoke("DestroyObject", 0.42f); 
         }
         if(collision.gameObject.CompareTag(WALL_TAG)){
-            Disapear(); 
+            DestroyObject(); 
         }
     }
  
-    void Disapear(){ 
+    void DestroyObject(){ 
         Destroy(gameObject);
     }
 }

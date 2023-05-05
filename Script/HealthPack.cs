@@ -11,8 +11,6 @@ public class HealthPack : MonoBehaviour
 
     private string BULLET_TAG = "Bullet";
     private string EARTH_TAG = "Earth";
-    private int randomIndex;
-
     private void Update(){
         Chase();
     }

@@ -6,8 +6,10 @@ public class SpawnMeteor : MonoBehaviour
 {
     [SerializeField] private GameObject meteorRef;
     [SerializeField] private Transform pos;
+    [SerializeField] private int maxNumberObject;
+    [SerializeField] private int max,min;
 
-    private int maxNumber = 0;
+    private int currentNumberObject = 0;
     private GameObject spawnMeteor;
 
     void Start(){
@@ -15,9 +17,9 @@ public class SpawnMeteor : MonoBehaviour
     }
 
     IEnumerator SpawnMeteors(){
-        while(true && maxNumber < 100){
-            yield return new WaitForSeconds(Random.Range(5, 20));
-            maxNumber = maxNumber +1;
+        while(true && currentNumberObject < 100){
+            yield return new WaitForSeconds(Random.Range(min, max));
+            currentNumberObject = currentNumberObject +1;
             spawnMeteor = Instantiate(meteorRef);
             spawnMeteor.transform.position = pos.position;
         }   

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class AlienSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject meteorRef;
+    [SerializeField] private GameObject alienRef;
     [SerializeField] private Transform pos;
-
-    private int maxNumber = 0;
+    [SerializeField] private int min, max;
+    [SerializeField] int maxNumberObject;
+    private int currentNumberObject = 0;
     private GameObject spawnMeteor;
 
     void Start(){
@@ -15,10 +16,10 @@ public class AlienSpawner : MonoBehaviour
     }
 
     IEnumerator SpawnMeteors(){
-        while(true && maxNumber < 100){
-            yield return new WaitForSeconds(Random.Range(30, 40));
-            maxNumber = maxNumber +1;
-            spawnMeteor = Instantiate(meteorRef);
+        while(true && currentNumberObject < maxNumberObject){
+            yield return new WaitForSeconds(Random.Range(min, max));
+            currentNumberObject = currentNumberObject +1;
+            spawnMeteor = Instantiate(alienRef);
             spawnMeteor.transform.position = pos.position;
         }   
     }

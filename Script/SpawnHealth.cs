@@ -7,8 +7,9 @@ public class SpawnHealt : MonoBehaviour
     [SerializeField] private GameObject healthRef;
     [SerializeField] private Transform pos;
     [SerializeField] private int minRan, maxRan;
+    [SerializeField] private int maxNumberObject;
 
-    private int maxNumber = 0;
+    private int currentNumberObject = 0;
     private GameObject spawnHealth;
 
     void Start(){
@@ -16,9 +17,9 @@ public class SpawnHealt : MonoBehaviour
     }
 
     IEnumerator SpawnHealthPack(){
-        while(true && maxNumber < 100){
+        while(true && currentNumberObject < maxNumberObject){
             yield return new WaitForSeconds(Random.Range(minRan, maxRan));
-            maxNumber = maxNumber +1;
+            currentNumberObject = currentNumberObject +1;
             spawnHealth = Instantiate(healthRef);
             spawnHealth.transform.position = pos.position;
         }   
